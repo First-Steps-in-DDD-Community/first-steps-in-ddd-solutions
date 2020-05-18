@@ -1,4 +1,4 @@
-package com.harmellaw;
+package com.harmellaw.investigation;
 /*
  * List from https://www.cps.gov.uk/sites/default/files/documents/publications/annex_1a_table_of_offences_scheme_c.pdf
  */

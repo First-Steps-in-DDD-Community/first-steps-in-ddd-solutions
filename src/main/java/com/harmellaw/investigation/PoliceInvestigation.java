@@ -1,4 +1,6 @@
-package com.harmellaw;
+package com.harmellaw.investigation;
+
+import com.harmellaw.PNCId;
 
 import java.util.HashSet;
 import java.util.Set;

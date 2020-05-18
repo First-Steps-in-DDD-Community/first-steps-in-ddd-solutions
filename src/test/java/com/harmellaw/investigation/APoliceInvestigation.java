@@ -1,5 +1,8 @@
-package com.harmellaw;
+package com.harmellaw.investigation;
 
+import com.harmellaw.PNCId;
+import com.harmellaw.investigation.PoliceInvestigation;
+import com.harmellaw.investigation.Suspect;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
