@@ -8,6 +8,9 @@ class CriminalCase {
 class CriminalOffence {
 }
 
+class OffenceAdvice {
+}
+
 class PNCId {
 }
 
@@ -15,6 +18,8 @@ class PoliceInvestigation {
 }
 
 class PreChargeDecision {
+    void recordAlternativeOffenceAdvice(Suspect, OffenceAdvice)
+    OffenceAdvice getOffenceAdviceFor(Suspect)
 }
 
 class Suspect    {
@@ -25,5 +30,9 @@ Suspect *-- "*" CriminalOffence
 PoliceInvestigation *-- "*" Suspect
 
 PoliceInvestigation *-- "*" PNCId
+
+PreChargeDecision *-- "*" Suspect
+
+PreChargeDecision *-- "*" OffenceAdvice
 
 @enduml
