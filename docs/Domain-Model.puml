@@ -2,30 +2,37 @@
 hide empty members
 hide empty methods
 
+package investigation {
+
+    class CriminalOffence {
+    }
+
+    class OffenceAdvice {
+    }
+
+    class PoliceInvestigation {
+    }
+
+    class PreChargeDecision {
+        void recordAlternativeOffenceAdvice(Suspect, OffenceAdvice)
+        OffenceAdvice getOffenceAdviceFor(Suspect)
+    }
+
+    class Suspect    {
+    }
+
+}
+
+package preparation{
+}
+
 class CriminalCase {
-}
-
-class CriminalOffence {
-}
-
-class OffenceAdvice {
 }
 
 class PNCId {
 }
 
-class PoliceInvestigation {
-}
-
-class PreChargeDecision {
-    void recordAlternativeOffenceAdvice(Suspect, OffenceAdvice)
-    OffenceAdvice getOffenceAdviceFor(Suspect)
-}
-
 class PublicProsecutionService {
-}
-
-class Suspect    {
 }
 
 Suspect *-- "*" CriminalOffence
