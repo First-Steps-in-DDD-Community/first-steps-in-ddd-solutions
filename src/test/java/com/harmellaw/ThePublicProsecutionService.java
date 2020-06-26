@@ -4,6 +4,9 @@ import com.harmellaw.investigation.CriminalOffence;
 import com.harmellaw.investigation.PoliceInvestigation;
 import com.harmellaw.investigation.PreChargeDecision;
 import com.harmellaw.investigation.Suspect;
+import com.harmellaw.preparation.CriminalCase;
+import com.harmellaw.preparation.Defendant;
+import com.harmellaw.preparation.PoliceCaseFile;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

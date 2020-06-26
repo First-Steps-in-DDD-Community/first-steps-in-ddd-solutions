@@ -1,4 +1,4 @@
-package com.harmellaw;
+package com.harmellaw.preparation;
 
 import org.junit.jupiter.api.BeforeEach;
 

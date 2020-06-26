@@ -1,6 +1,6 @@
-package com.harmellaw;
+package com.harmellaw.preparation;
 
-import com.harmellaw.investigation.Suspect;
+import com.harmellaw.PNCId;
 
 import java.util.Set;
 
