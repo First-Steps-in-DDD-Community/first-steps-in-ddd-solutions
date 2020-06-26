@@ -2,7 +2,7 @@ package com.harmellaw;
 
 import com.harmellaw.investigation.CriminalOffence;
 import com.harmellaw.investigation.PoliceInvestigation;
-import com.harmellaw.investigation.PreChargeDecision;
+import com.harmellaw.investigation.PreChargeDecisionCase;
 import com.harmellaw.investigation.Suspect;
 import com.harmellaw.preparation.CriminalCase;
 import com.harmellaw.preparation.Defendant;
@@ -28,7 +28,7 @@ public class ThePublicProsecutionService {
     }
 
     public void shouldCreateAPreChargeDecisionCaseWhenReceivingAPcdRequest() {
-        PreChargeDecision pcdCase = thePps.receiveRequestForPreChargeDecision(policeInvestigation);
+        PreChargeDecisionCase pcdCase = thePps.receiveRequestForPreChargeDecision(policeInvestigation);
 
         assertEquals(pncId, pcdCase.pncId);
         assertEquals(policeInvestigation.suspects, pcdCase.getSuspects());

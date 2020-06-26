@@ -1,13 +1,13 @@
 package com.harmellaw;
 
 import com.harmellaw.investigation.PoliceInvestigation;
-import com.harmellaw.investigation.PreChargeDecision;
+import com.harmellaw.investigation.PreChargeDecisionCase;
 import com.harmellaw.preparation.CriminalCase;
 import com.harmellaw.preparation.PoliceCaseFile;
 
 public class PublicProsecutionService {
-    public PreChargeDecision receiveRequestForPreChargeDecision(PoliceInvestigation policeInvestigation) {
-        return new PreChargeDecision(policeInvestigation.pncId, policeInvestigation.suspects);
+    public PreChargeDecisionCase receiveRequestForPreChargeDecision(PoliceInvestigation policeInvestigation) {
+        return new PreChargeDecisionCase(policeInvestigation.pncId, policeInvestigation.suspects);
     }
 
     public CriminalCase acceptCaseFile(PoliceCaseFile policeCaseFile) {
