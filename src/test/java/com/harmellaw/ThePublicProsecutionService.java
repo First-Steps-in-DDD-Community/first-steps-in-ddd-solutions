@@ -31,4 +31,15 @@ public class ThePublicProsecutionService {
         assertEquals(policeInvestigation.suspects, policeCase.suspects);
     }
 
+    @Test
+    public void shouldCreateACriminalCaseWhenAPoliceCaseFileIsAccepted() {
+        Defendant defendant = new Defendant();
+        PoliceCaseFile policeCaseFile = new PoliceCaseFile(pncId, defendant);
+
+        CriminalCase criminalCase = thePps.acceptCaseFile(policeCaseFile);
+
+        assertEquals(pncId, criminalCase.pncId);
+        assertEquals(policeCaseFile.defendants, criminalCase.defendants);
+    }
+
 }
