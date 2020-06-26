@@ -8,10 +8,10 @@ public class CriminalCase {
 
     public PNCId pncId;
     public Set<Suspect> suspects;
+    public Set<Defendant> defendants;
 
-    public CriminalCase(PNCId pncId, Set<Suspect> suspects) {
+    public CriminalCase(PNCId pncId, Set<Defendant> defendants) {
         this.pncId = pncId;
-        this.suspects = suspects;
+        this.defendants = defendants;
     }
-
 }
