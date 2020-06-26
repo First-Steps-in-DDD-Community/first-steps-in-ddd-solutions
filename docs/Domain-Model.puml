@@ -22,6 +22,9 @@ class PreChargeDecision {
     OffenceAdvice getOffenceAdviceFor(Suspect)
 }
 
+class PublicProsecutionService {
+}
+
 class Suspect    {
 }
 
@@ -29,10 +32,17 @@ Suspect *-- "*" CriminalOffence
 
 PoliceInvestigation *-- "*" Suspect
 
-PoliceInvestigation *-- "*" PNCId
+PoliceInvestigation *-- PNCId
 
 PreChargeDecision *-- "*" Suspect
 
 PreChargeDecision *-- "*" OffenceAdvice
 
+CriminalCase *-- PNCId
+
+CriminalCase *-- "*" Suspect
+
+PublicProsecutionService --> CriminalCase : <<creates>>
+
+PublicProsecutionService --> PoliceInvestigation : <<uses>>
 @enduml
