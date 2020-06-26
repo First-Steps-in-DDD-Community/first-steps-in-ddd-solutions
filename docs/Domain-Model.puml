@@ -10,7 +10,7 @@ package investigation {
     class OffenceAdvice {
     }
 
-    class PoliceInvestigation {
+    class PoliceInvestigationDetails {
     }
 
     class PreChargeDecisionCase {
@@ -48,9 +48,9 @@ PoliceCaseFile *-- PNCId
 
 PoliceCaseFile *-- Defendant
 
-PoliceInvestigation *-- "*" Suspect
+PoliceInvestigationDetails *-- "*" Suspect
 
-PoliceInvestigation *-- PNCId
+PoliceInvestigationDetails *-- PNCId
 
 PreChargeDecisionCase *-- "*" Suspect
 
@@ -62,5 +62,5 @@ CriminalCase *-- "*" Defendant
 
 PublicProsecutionService --> CriminalCase : <<creates>>
 
-PublicProsecutionService --> PoliceInvestigation : <<uses>>
+PublicProsecutionService --> PoliceInvestigationDetails : <<uses>>
 @enduml
