@@ -2,6 +2,7 @@ package com.harmellaw;
 
 import com.harmellaw.investigation.CriminalOffence;
 import com.harmellaw.investigation.PoliceInvestigation;
+import com.harmellaw.investigation.PreChargeDecision;
 import com.harmellaw.investigation.Suspect;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -23,12 +24,11 @@ public class ThePublicProsecutionService {
         policeInvestigation = new PoliceInvestigation(pncId, suspect);
     }
 
-    @Test
-    public void shouldCreateACaseWhenReceivingAPcdRequest() {
-        CriminalCase policeCase = thePps.receiveRequestForPreChargeDecision(policeInvestigation);
+    public void shouldCreateAPreChargeDecisionCaseWhenReceivingAPcdRequest() {
+        PreChargeDecision pcdCase = thePps.receiveRequestForPreChargeDecision(policeInvestigation);
 
-        assertEquals(pncId, policeCase.pncId);
-        assertEquals(policeInvestigation.suspects, policeCase.suspects);
+        assertEquals(pncId, pcdCase.pncId);
+        assertEquals(policeInvestigation.suspects, pcdCase.getSuspects());
     }
 
     @Test
