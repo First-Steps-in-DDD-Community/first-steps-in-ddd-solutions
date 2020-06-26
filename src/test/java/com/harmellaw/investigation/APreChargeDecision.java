@@ -1,4 +1,4 @@
-package com.harmellaw;
+package com.harmellaw.investigation;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

@@ -1,5 +1,7 @@
 package com.harmellaw;
 
+import com.harmellaw.investigation.Suspect;
+
 import java.util.Set;
 
 public class CriminalCase {

@@ -1,4 +1,4 @@
-package com.harmellaw;
+package com.harmellaw.investigation;
 
 import java.util.HashMap;
 import java.util.Map;

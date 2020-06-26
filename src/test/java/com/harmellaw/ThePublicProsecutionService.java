@@ -1,5 +1,8 @@
 package com.harmellaw;
 
+import com.harmellaw.investigation.CriminalOffence;
+import com.harmellaw.investigation.PoliceInvestigation;
+import com.harmellaw.investigation.Suspect;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
