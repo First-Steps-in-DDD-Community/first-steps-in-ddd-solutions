@@ -8,11 +8,11 @@ public class PreChargeDecision {
     private Map<Suspect, OffenceAdvice> offenceAdvice = new HashMap<>();
 
     public void recordAlternativeOffenceAdvice(Suspect suspect, OffenceAdvice advice) {
-
+        offenceAdvice.put(suspect, advice);
     }
 
     public OffenceAdvice getOffenceAdviceFor(Suspect suspect) {
-        return null;
+        return offenceAdvice.get(suspect);
     }
 
 }
