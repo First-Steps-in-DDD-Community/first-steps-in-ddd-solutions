@@ -4,6 +4,10 @@ hide empty methods
 
 package investigation {
 
+    class PreChargeDecisionService {
+        PreChargeDecisionCase receiveRequestForPreChargeDecision (PoliceInvestigation)
+    }
+
     class CriminalOffence {
     }
 
@@ -24,6 +28,11 @@ package investigation {
 }
 
 package preparation{
+
+    class TrialPreparationService {
+        CriminalCase acceptCaseFile (PoliceCaseFile)
+    }
+
     class CriminalCase {
     }
 
@@ -35,11 +44,6 @@ package preparation{
 }
 
 class PNCId {
-}
-
-class PublicProsecutionService {
-    PreChargeDecisionCase receiveRequestForPreChargeDecision (PoliceInvestigation)
-    CriminalCase acceptCaseFile (PoliceCaseFile)
 }
 
 Suspect *-- "*" CriminalOffence
@@ -54,13 +58,19 @@ PoliceInvestigationDetails *-- PNCId
 
 PreChargeDecisionCase *-- "*" Suspect
 
+PreChargeDecisionCase *-- "*" PNCId
+
 PreChargeDecisionCase *-- "*" OffenceAdvice
 
 CriminalCase *-- PNCId
 
 CriminalCase *-- "*" Defendant
 
-PublicProsecutionService --> CriminalCase : <<creates>>
+PreChargeDecisionService --> PreChargeDecisionCase : <<creates>>
 
-PublicProsecutionService --> PoliceInvestigationDetails : <<uses>>
+PreChargeDecisionService --> PoliceInvestigationDetails : <<uses>>
+
+TrialPreparationService --> CriminalCase : <<creates>>
+
+TrialPreparationService --> PoliceCaseFile : <<uses>>
 @enduml
