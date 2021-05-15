@@ -1,4 +1,4 @@
-# First Steps in Domain-Driven Design 
+# First Steps in Domain-Driven Design - Java Solution
 ![Build](https://github.com/andrewharmellaw/first-steps-in-ddd/workflows/Build/badge.svg) [![Known Vulnerabilities](https://snyk.io/test/github/andrewharmellaw/first-steps-in-ddd/badge.svg?targetFile=build.gradle)](https://snyk.io/test/github/andrewharmellaw/first-steps-in-ddd?targetFile=build.gradle)
 
 This is the starter project for the exercises in the "First Steps in Domain-Driven Design" course I'm currently writing.
@@ -9,6 +9,7 @@ You should be able to fork and then clone this repo to get an almost-empty gradl
 * Java JDK (at least Java 8)
 * IDE of your choice
 * Git client (unless you already have one in your IDE)
+* You don't need to have Gradle as the gradle wrapper is part of this project and will download gradle 7 for you.  You might however want to use another gradle binary (such as the one which comes with IntelliJ IDEA) which should work fine
 
 ## What you get
 A directory `first-steps-in-ddd` containing this README.md, a gradle build file with JUnit 5 dependencies
@@ -25,7 +26,7 @@ top-level project directory). Then check you can execute all the tests with the 
 button, or ideally a single keyboard shortcut.
 
 Additionally, it can be handy to check your build on the command line. Open a terminal and change to the
-top-level project directory. Then run the command `gradle build`.  You ought to see your code and tests
+top-level project directory. Then run the command `./gradlew build`.  You ought to see your code and tests
 compile, and all but one of the tests run successfully.
 
 The failing test is where we will start exercise one.
