@@ -1,7 +1,7 @@
 # First Steps in Domain-Driven Design - Java Solution
 ![Build](https://github.com/andrewharmellaw/first-steps-in-ddd/workflows/Build/badge.svg) [![Known Vulnerabilities](https://snyk.io/test/github/andrewharmellaw/first-steps-in-ddd/badge.svg?targetFile=build.gradle)](https://snyk.io/test/github/andrewharmellaw/first-steps-in-ddd?targetFile=build.gradle)
 
-This is the starter project for the exercises in the "First Steps in Domain-Driven Design" course for O'Reilly.  If you are more of a dotnet person, take a look at the [C# version of this codebase](https://github.com/First-Steps-in-DDD-Community/first-steps-in-ddd-solutions-dotnet/blob/main/README.md) (Thanks to @BAPostma for contributing this).
+This is the starter project for the exercises in the "First Steps in Domain-Driven Design" course for O'Reilly.  If you are more of a dotnet person, take a look at the [C# version of this codebase](https://github.com/First-Steps-in-DDD-Community/first-steps-in-ddd-solutions-dotnet/blob/main/README.md) (Thanks to @BAPostma for contributing this). If on the other hand you prefer Python, check out @AndreiPradan's [repository](https://github.com/andreipradan/first-steps-in-ddd-solutions-python).
 
 You should be able to fork and then clone this repo to get an almost-empty gradle project ready to work with.
 
